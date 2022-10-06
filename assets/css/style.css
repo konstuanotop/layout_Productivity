@@ -592,3 +592,35 @@ h6 {
 
     color: #5E80FF;
 }
+
+.blog {
+    margin: 104px auto;
+}
+
+.blog__suptitle {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #3D4F9F;
+}
+
+.blog__title {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+
+    text-align: center;
+    color: #3D4F9F;
+}
+
+.blog__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
