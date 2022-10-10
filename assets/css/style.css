@@ -196,6 +196,7 @@ h6 {
 
 .container_2 {
     margin: 0 auto;
+    padding: 0 15px;
     width: 100%;
     max-width: 888px;
 }
@@ -218,7 +219,7 @@ h6 {
 }
 
 .plan {
-    padding: 208px 0;
+    padding: 208px 15px;
     background-color: #F5F8FF;
 }
 
@@ -669,8 +670,7 @@ h6 {
 
 .blog {
     margin: 0 auto;
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding: 104px 15px;
 
     display: flex;
     flex-direction: column;
@@ -868,12 +868,15 @@ h6 {
 }
 
 .testimonials {
-    padding: 108px 0;
+    padding: 108px 15px;
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+
+    overflow: hidden;
 }
 
 .testimonials__container {
     margin: 0 auto;
+    padding: 0 15px;
     width: 100%;
     max-width: 1121px;
 }
@@ -924,7 +927,7 @@ h6 {
 }
 
 .testimonials__text {
-    width: 380px;
+    width: 323px;
 
     font-family: 'Roboto';
     font-weight: 400;
@@ -932,4 +935,199 @@ h6 {
     line-height: 1.9;
 
     color: #8D96BD;
+}
+
+.testimonials__posiiton {
+    margin-bottom: 110px;
+    position: relative;
+}
+
+
+.testimonials__slider {
+    position: absolute;
+    top: -220px;
+    right: -290px;
+
+    width: 100%;
+    max-width: 958px;
+
+    min-width: 0;
+}
+
+.testimonials__slider .slick-list {
+    height: 210px;
+}
+
+.testimonials__slider-item {
+    margin-right: 64px;
+    padding: 25px 70px;
+
+    position: relative;
+    opacity: 0.4;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #676F95;
+
+    background-color: #fff;
+    border: 1px solid #D8E3FE;
+    box-shadow: 0px 5px 50px #F3F5FA;
+
+}
+
+.testimonials__slider-item.slick-current {
+    opacity: 1;
+}
+
+.testimonials__slider-item.slick-current:after {
+    content: url("../img/testmonials_1.svg");
+
+    position: absolute;
+    left: 180px;
+    top: 144px;
+
+    width: 62px;
+    height: 62px;
+}
+
+.testimonials__slider-item:last-child {
+    margin-right: 0;
+}
+
+.testimonials__slider .slick-dots {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__slider .slick-dots li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.testimonials__slider .slick-dots button {
+    padding: 0;
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #D1D6E3;
+}
+
+.testimonials__slider .slick-dots li.slick-active button {
+    background-color: #5283FF;
+}
+
+.questions {
+    margin: 176px auto;
+    width: 100%;
+    max-width: 743px;
+}
+
+.questions__suptitle {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #3D4F9F;
+}
+
+.questions__title {
+    margin-bottom: 68px;
+
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+
+    color: #3D4F9F;
+}
+
+.questions__item {
+    display: flex;
+}
+
+.accordion__item {
+    margin-bottom: 17px;
+    border-bottom: 1px solid #D8E3FE;
+
+    width: 100%;
+}
+
+.accordion__item.active .accordion__content {
+    display: flex;
+}
+
+.accordion__item.active .accordion__header {
+    font-weight: 700;
+    color: #495274;
+}
+
+.accordion__item.active .accordion__header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+.accordion__header {
+    padding: 17px 10px 15px 62px;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.accordion__header:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    border-top: 3px solid #8E96B7;
+    border-right: 3px solid #8E96B7;
+
+    position: absolute;
+    top: 44%;
+    left: 24px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion__content {
+    padding: 0 32px 45px 80px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion__content p {
+    margin-right: 62px;
+
+    width: 100%;
+    max-width: 379px;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #8D96BD;
+}
+
+.btn__accordion {
+    padding: 13px 15px;
+
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #7382A3;
+
+    background-color: #E8ECF4;
+    border-radius: 2px;
 }
