@@ -129,9 +129,9 @@ h6 {
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
 
-    /* background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%); */
-    background: url("../img/into_back.svg") center no-repeat;
-    background-size: 110%;
+    position: relative;
+
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
 }
 
 .intro__inner {
@@ -208,6 +208,32 @@ h6 {
 
     background: url("../img/intro_background.svg") center no-repeat;
     background-size: cover;
+}
+
+.intro__dot {
+    position: absolute;
+    left: 31.9%;
+    bottom: 12.3%;
+    z-index: 10;
+}
+
+.intro__chart {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.intro__chart-img {
+    width: 100%;
+}
+
+
+.intro__slider {
+    margin-top: 176px;
+    margin-bottom: 28px;
+
+    text-align: center;
 }
 
 .container_2 {
